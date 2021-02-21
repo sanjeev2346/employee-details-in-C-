@@ -1,0 +1,33 @@
+#include <stdio.h> 
+#include <string.h> 
+struct Employee 
+{ 
+  char Name[50]; int age; 
+  int phone_number;
+  float Salary;
+   };
+    int main() 
+    {
+     struct Employee emp1 = {"Dave", 25, 9856479, 25000.50 }; 
+     struct Employee emp2 = {"kavi", 28, 8775626, 28000.50 };
+     struct Employee emp3 = {"hariharan",30, 5093814, 30000.50};
+     struct Employee emp4 = {"Arunachalem", 32, 4589239, 32000.50};
+       printf(" Name            Age      Phone_number    Salary \n " );
+           printf(" %s \t ", emp1.Name );
+           printf("        %d \t ", emp1.age );
+           printf(" %d \t",emp1.phone_number);
+           printf("  %.2f \n ", emp1.Salary ); 
+           printf(" %s \t ", emp2.Name );
+           printf("        %d \t ", emp2.age );
+           printf(" %d \t",emp2.phone_number);
+           printf("  %.2f \n ", emp2.Salary);
+           printf(" %s \t ", emp3.Name );
+           printf("%d \t ", emp3.age );
+           printf(" %d \t",emp3.phone_number);
+           printf("  %.2f \n ", emp3.Salary ); 
+           printf(" %s \t ", emp4.Name );
+           printf("%d \t ", emp4.age );
+           printf(" %d \t",emp4.phone_number);
+           printf("  %.2f \n ", emp4.Salary);
+		   return 0; 
+    }
